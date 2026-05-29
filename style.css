@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+body{
+    background: linear-gradient(-45deg,
+        #0a0a0a,
+        #00335a,
+        #1c2735,
+        #0a0a0a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgb(184, 188, 197);
+}
+
+input{
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+    width: 420px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84 , 84 , 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255 , 255 , 255 , 0.1);
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: #de5f0b;
+    box-shadow: 0 0 20px #ff3700;
+}
+
+.operator{
+    color: #01f9f9;
+    text-shadow: 0 0 8px #0caeff;
+}
+
+.special_operator{
+    background-color: #fb06ff;
+    box-shadow: 0 0 20px #ea0bd4;
+}
+
+.history-container{
+    margin-left: 30px;
+    color: white;
+    width: 250px;
+}
+
+.history-container h3{
+    margin-bottom: 10px;
+}
+
+#history{
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #717377;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+}
+
+.history-item{
+    padding: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#clearHistory{
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #05d6fb;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+#clearHistory:hover{
+    background: #0e4ef0;
+}
