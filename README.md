@@ -84,13 +84,6 @@ Advanced-Calculator/
 5. View previous calculations in the History panel.
 6. Use "Clear History" to remove all saved calculations.
 
-## 📸 Screenshot
-
-Add a screenshot of your calculator here.
-
-```markdown
-![Calculator Screenshot](screenshot.png)
-```
 
 ## 🎯 Future Improvements
 
